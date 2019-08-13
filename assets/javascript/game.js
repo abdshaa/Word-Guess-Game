@@ -61,4 +61,21 @@ let letterGuessed = "";
 document.onkeyup = function(event) {
   userGuess = event.key.toLowerCase;
   letterGuessed(userGuess);
+  const guessesLeft = 10
+    
+  if (userGuess != letterState) {
+      GuessesLeft = GuessesLeft - 1
+  }
+
+  else if (guessesLeft === 0) {
+                  guessesLeft = 9;
+                  losses+1;
+              }
+  
+  else {
+      document.getElementById ("word")
+      numberGuessesText.textContent = "Guesses left:" + guessesLeft
+  };
+
 };
+ 
