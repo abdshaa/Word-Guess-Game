@@ -23,5 +23,27 @@
       <p>Current Words Guessed <span id="lettersGuessed"></span></p>
       <p>Number of guesses remaining <span id="guessesLeft"></span></p>
     </div>
+    <script>
+
+        const guessesLeft = 10
+    
+        if (userGuess != letterState) {
+            GuessesLeft = GuessesLeft - 1
+        }
+    
+        else if (guessesLeft === 0) {
+                        guessesLeft = 9;
+                        losses+1;
+                    }
+        
+        else {
+            document.getElementById ("word")
+            numberGuessesText.textContent = "Guesses left:" + guessesLeft
+        };
+    
+        
+        </script>
+
+
   </body>
 </html>
