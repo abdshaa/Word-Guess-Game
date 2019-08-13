@@ -51,6 +51,22 @@ const stateList = [
   "West Virginia",
   "Wyoming"
 ];
+
+function getRandomState(array){
+  let randNum= Math.floor(Math.random()*array.length)
+  let state= array[randNum]
+  console.log(`HEY! ${state}`)
+  return state.split("")
+}
+let myRandomState= getRandomState(states)
+console.log(myRandomState)
+
+function statestrings(stateName){
+  
+}
+
+
+
 //variables
 let win = 0;
 let lose = 0;
